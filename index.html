@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrr</title>
+</head>
+<body>
+  <p>The best car in the world!</p>
+  <p id="car1"></p>
+
+  <script>
+    class Car {
+      constructor(brand, speed, type, name) {
+        this.brand = brand;
+        this.speed = speed;
+        this.type = type;
+        this.name = name;
+      }
+    }
+
+    let car1 = new Car("Ferrari", 352, "Hypercar", "Ferrari LaFerrari");
+
+    
+    document.getElementById("car1").innerHTML =
+      `Brand: ${car1.brand}<br>
+       Speed: ${car1.speed} km/h<br>
+       Type: ${car1.type}<br>
+       Name: ${car1.name}`;
+  </script>
+</body>
+</html>
